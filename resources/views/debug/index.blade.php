@@ -26,21 +26,35 @@
                 />
 
                 <x-form.textarea 
+                    placeholder="Type your message..."
                     id="error-log-input"
                     name="message"
                     rows="8"
                     class="block w-3/4"
                 />
-            </div>
-
-            <div class="mt-6 flex justify-end">
                 <x-button
                     variant="primary"
-                    class="ml-3"
+                    class=""
                 >
                     {{ __('Enter') }}
                 </x-button>
             </div>
+
+            <!-- <div class="mt-6 flex justify-end">
+                
+            </div> -->
         </form>
+        <h2 class="text-lg font-medium">
+            Answer
+        </h2>
+        <div class ="mt-6 space-y-6">
+            <x-form.textarea 
+            id="error-log-input"
+            name="message"
+            rows="4"
+            class="block w-3/4"
+            />
+        </div>
+        
     </div>
 </x-app-layout>

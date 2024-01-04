@@ -1,12 +1,12 @@
 <div class="flex items-center justify-between flex-shrink-0 px-3">
     <!-- Logo -->
     <a
-        href="{{ route('dashboard') }}"
+        href="{{ route('debug.index') }}"
         class="inline-flex items-center gap-2"
     >
-        <x-application-logo aria-hidden="true" class="w-10 h-auto" />
+        <img src="{{asset('assets/images/ldh-high-resolution-logo-transparent.png')}}" alt="logo" class="w-20 h-auto">
 
-        <span class="sr-only">Dashboard</span>
+        <span class="sr-only">Debug</span>
     </a>
 
     <!-- Toggle button -->
