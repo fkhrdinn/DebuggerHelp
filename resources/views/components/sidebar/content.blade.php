@@ -4,15 +4,15 @@
     class="flex flex-col flex-1 gap-4 px-3"
 >
 
-    <!-- <x-sidebar.link
+    <x-sidebar.link
         title="Dashboard"
         href="{{ route('dashboard') }}"
         :isActive="request()->routeIs('dashboard')"
     >
         <x-slot name="icon">
-            <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            <x-icons.dashboard class class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>
-    </x-sidebar.link> -->
+    </x-sidebar.link>
 
     <x-sidebar.link
         title="Debug"
@@ -20,7 +20,7 @@
         :isActive="request()->routeIs('debug.index')"
     >
         <x-slot name="icon">
-            <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            <x-heroicon-o-view-grid class class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>
     </x-sidebar.link>
 
@@ -49,7 +49,7 @@
         />
     </x-sidebar.dropdown> -->
 
-    <div
+    <!-- <div
         x-transition
         x-show="isSidebarOpen || isSidebarHovered"
         class="text-sm text-gray-500"
@@ -57,6 +57,6 @@
         Chat
     </div>
 
-    <x-sidebar.link title="PDO Error" href="#" />
+    <x-sidebar.link title="PDO Error" href="#" /> -->
 
 </x-perfect-scrollbar>

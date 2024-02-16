@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('datasets', function (Blueprint $table) {
+        Schema::create('solutions', function (Blueprint $table) {
             $table->id();
             $table->text('error_type');
-            $table->text('data');
+            $table->text('solution');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('datasets');
+        Schema::dropIfExists('solutions');
     }
 };

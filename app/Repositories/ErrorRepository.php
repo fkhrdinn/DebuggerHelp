@@ -27,7 +27,6 @@ class ErrorRepository
                 'table',
                 'Database',
                 'QueryException',
-                'Connection',
                 'Eloquent',
                 'Builder',
                 'violation',
@@ -40,16 +39,14 @@ class ErrorRepository
             "ClassException" => [
                 'Class',
                 'DataTableComponent',
-                'FatalError',
                 'DataTable',
-                'ProviderRepository'
+                'ProviderRepository',
+                'Target class'
             ],
             "ComponentNotFoundException" => [
-                'component',
                 'ComponentNotFoundException',
-                'LivewireManager',
-                'call',
-                'MethodNotFoundException',
+                'NonPublicComponentMethodCall',
+                'Unable to call component method'
             ],
             "ControllerException" => [
                 'Controller',
@@ -57,37 +54,26 @@ class ErrorRepository
                 'BindResolutionException',
             ],
             "ErrorException" => [
-                'parameter',
-                'string',
-                'array',
-                'expects',
                 'strpos',
                 'substr',
-                'non-numeric',
-                'non',
-                'numeric',
                 'ErrorException',
-                'value',
                 'strlen',
                 'implode',
                 'htmlspecialchars',
                 'explode',
-                'count',
                 'sizeof',
                 'unsupported',
                 'operand',
-                'argument',
                 'array_merge',
                 'offset',
                 'stdClass',
                 'ArrayAccess',
-                'constants',
-                'layouts',
                 'str_contains',
-                'file',
                 'upload',
                 'json_decode',
-                'json_encode'
+                'json_encode',
+                'Division by zero',
+                'Array to string conversion'
             ],
             "HttpResponseException" => [
                 'response',
@@ -101,70 +87,88 @@ class ErrorRepository
                 'Log',
                 'LogManager',
                 'InvalidArgumentException',
-                'Too',
-                'few',
-                'arguments',
                 'Invalid',
                 'invalid',
                 'preset',
-                'member',
-                'TypeError'
+                'TypeError',
+                'Too few arguments to function',
+                'Argument 1 passed',
+                'Argument #1',
+                'Argument #2'
             ],
             "NullValue" => [
                 'null',
                 'Null',
             ],
+            "NamespaceNotFoundException" => [
+                'NamespaceNotFoundException',
+                'Namespace',
+                'namespace'
+            ],
             "PropertyNotFoundException" => [
                 'Property',
+                'property',
                 'PropertyNotFoundException',
-                'livewire',
-                'Trying',
-                'get',
-                'non-object'
+            ],
+            "PackageNotFoundException" => [
+                'package'
+            ],
+            "RunTimeException" => [
+                'RuntimeException'
             ],
             "ResourceNotFoundException" => [
-                'Unable',
                 'locate',
                 'Vite',
                 'manifest',
-                'resources',
                 'css',
                 'sass',
                 'scss'
             ],
+            "TraitNotFoundException" => [
+                'Trait'
+            ],
             "RouteException" => [
                 'route',
                 'Route',
+                'routing',
                 'Routing',
                 'RouteNotFoundException',
-                'UrlGenerator'
+                'UrlGenerator',
+                'This driver does not support creating temporary URLs'
             ],
             "SyntaxException" => [
+                'Syntax',
                 'syntax',
                 'ParseError',
                 'Parse',
                 'parse',
-                'unexpected'
+                'unexpected',
+                'exit',
+                'Unclosed'
             ],
             "UndefinedFunction" => [
-                'Undefined',
-                'function',
+                'Call to undefined function',
+                'Call to a member function'
+            ],
+            "UndefinedConstant" => [
+                'Undefined constant',
             ],
             "UndefinedVariable" => [
+                'Undefined variable',
                 'variable',
-                'Undefined'
+            ],
+            "UndefinedMethod" => [
+                'Call to undefined method'
+            ],
+            "DependencyException" => [
+                'Unable to resolve dependency'
             ],
             "ViewException" => [
-                'resolve',
-                'dependency',
-                'Parameter',
-                'View',
-                'blade',
-                'ViewException',
-                'BindingResolutionException',
                 'FileViewFinder',
-                'welcome',
-                'layouts'
+                'View'
+            ],
+            "SMTPException" => [
+                'smtp'
             ]
         ];
         return $errorKeyword;
